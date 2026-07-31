@@ -1,0 +1,54 @@
+name: Update Fire Smoke Products
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fire-smoke-update
+  cancel-in-progress: false
+
+jobs:
+  update-products:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download and process latest data
+        env:
+          PTREE_USERNAME: ${{ secrets.PTREE_USERNAME }}
+          PTREE_PASSWORD: ${{ secrets.PTREE_PASSWORD }}
+        run: |
+          python scheduled_update.py
+
+      - name: Commit updated products
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add products/
+
+          if git diff --cached --quiet; then
+            echo "Tidak ada produk baru."
+          else
+            git commit -m "Update fire-smoke products"
+            git push
+          fi
