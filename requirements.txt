@@ -1,0 +1,10 @@
+streamlit>=1.37
+numpy
+pandas
+xarray
+h5netcdf
+h5py
+netCDF4
+matplotlib
+plotly
+Pillow
