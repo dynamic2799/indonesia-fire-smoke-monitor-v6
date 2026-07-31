@@ -1,0 +1,32 @@
+{
+  "generated_at_utc": "2026-07-31T02:40:29.643676Z",
+  "observation_time_utc": "2026-07-31T02:20:00Z",
+  "hotspot_time_utc": "2026-07-31T02:00:00Z",
+  "ahi_file": "NC_H09_20260731_0220_R21_FLDK.02801_02401.nc",
+  "ahi_download_result": "downloaded",
+  "hotspot_download_result": "downloaded",
+  "archive_retention_days": 7,
+  "removed_archives": 0,
+  "areas": {
+    "Indonesia": {
+      "rgb_file": "indonesia_rgb.png",
+      "latest_png": "latest_indonesia.png",
+      "lon_min": 94.5,
+      "lon_max": 141.5,
+      "lat_min": -11.5,
+      "lat_max": 8.0,
+      "width": 941,
+      "height": 391
+    },
+    "Berau": {
+      "rgb_file": "berau_rgb.png",
+      "latest_png": "latest_berau.png",
+      "lon_min": 116.0,
+      "lon_max": 119.5,
+      "lat_min": 0.5,
+      "lat_max": 2.799999237060547,
+      "width": 71,
+      "height": 47
+    }
+  }
+}
