@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-08-14T11:29:31.798727Z",
-  "observation_time_utc": "2026-08-14T11:10:00Z",
-  "hotspot_time_utc": "2026-08-14T10:50:00Z",
-  "ahi_file": "NC_H09_20260814_1110_R21_FLDK.02801_02401.nc",
+  "generated_at_utc": "2026-08-14T12:11:36.800769Z",
+  "observation_time_utc": "2026-08-14T11:50:00Z",
+  "hotspot_time_utc": "2026-08-14T11:30:00Z",
+  "ahi_file": "NC_H09_20260814_1150_R21_FLDK.02801_02401.nc",
   "ahi_download_result": "downloaded",
   "hotspot_download_result": "downloaded",
   "archive_retention_days": 7,
-  "removed_archives": 2,
+  "removed_archives": 0,
   "areas": {
     "Indonesia": {
       "rgb_file": "indonesia_rgb.png",
