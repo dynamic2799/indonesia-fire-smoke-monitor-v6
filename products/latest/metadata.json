@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-17T16:50:10.852446Z",
-  "observation_time_utc": "2026-10-17T16:30:00Z",
-  "hotspot_time_utc": "2026-10-17T16:10:00Z",
-  "ahi_file": "NC_H09_20261017_1630_R21_FLDK.02801_02401.nc",
+  "generated_at_utc": "2026-10-17T18:53:36.064188Z",
+  "observation_time_utc": "2026-10-17T18:30:00Z",
+  "hotspot_time_utc": "2026-10-17T18:10:00Z",
+  "ahi_file": "NC_H09_20261017_1830_R21_FLDK.02801_02401.nc",
   "ahi_download_result": "downloaded",
   "hotspot_download_result": "downloaded",
   "archive_retention_days": 7,
